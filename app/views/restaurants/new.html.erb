@@ -5,8 +5,9 @@
     <%= f.input :name %>
     <%= f.input :address %>
     <%= f.input :phone_number %>
-    <%= f.submit %>
+    <%= f.input :category %>
+    <%= f.submit "Create", class: "btn btn-primary"%>
+    <%= link_to "Back to all restaurants", restaurants_path, class: "btn btn-dark"%>
   <% end %>
 
-  <p><%= link_to "Back to all restaurants",  %></p>
 </div>
